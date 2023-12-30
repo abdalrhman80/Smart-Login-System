@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/styel.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div class="container">
+        <div class="row">
+            <div class="signup w-75 mx-auto  text-center p-5 ">
+                <h1 class="text-info opacity-75">SignUp</h1>
+                <div class="mb-3">
+                    <input type="text" class="form-control body-bg text-white" id="nameInput" aria-describedby="helpId"
+                        placeholder="Enter Your name" />
+                    <p class="text-danger text-start pt-1 d-none name-wrong">Username must contain at least 5
+                        characters </p>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control body-bg text-white " id="emailInput"
+                        placeholder="Enter Your email" />
+                    <p class="text-danger text-start pt-1 d-none email-wrong">Email must be valid one </p>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control body-bg text-white" id="passwordInput"
+                        placeholder="Enter Your password" />
+                    <p class="text-danger text-start pt-1 d-none password-wrong">Password has minimum 8 characters, (at
+                        least one uppercase, one lowercase and one digit) </p>
+                </div>
+                <p class="text-success fs-5 d-none p-success pt-2"> SUCCESS</p>
+                <p class="text-danger fs-5 d-none p-incorrect pt-2">Incorrect name or email or password</p>
+                <p class="text-danger fs-5 d-none p-required pt-2">All inputs is required</p>
+                <p class="text-danger fs-5 d-none p-exists pt-2">E-mail Or Name is exists </p>
+                <a id="signupButtonLink">
+                    <button type="button" class="btn btn-outline-info w-100" id="signupButton">Sign Up</button>
+                </a>
+                <P class="text-white singup pt-3">Do have an account? <a href="index.html"
+                        class="text-white singup-link">Signin</a></P>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Signup JS -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

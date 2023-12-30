@@ -1,0 +1,56 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.body-bg,
+.form-control:focus {
+    background-color: #24353F;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.737);
+}
+
+.login,
+.signup,
+.home {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    /* margin-top: 100px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.singup {
+    font-size: 18px;
+}
+
+.singup-link {
+    text-decoration: none;
+}
+
+.singup-link:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-control-right {
+    box-shadow: 0 0 0 0.20rem #366928 !important;
+}
+
+.form-control-wrong {
+    box-shadow: 0 0 0 0.20rem #ff494999 !important;
+}
