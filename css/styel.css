@@ -1,14 +1,58 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .55555555), rgba(0, 0, 0, .55555555)),
+        url("../images/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+::selection {
+    background-color: #6a8b9b;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.text-wheat {
+    color: #ffc456;
+}
+
+.form-control-right {
+    box-shadow: 0 0 0 0.18rem #24a569c9 !important;
+}
+
+.form-control-wrong {
+    box-shadow: 0 0 0 0.18rem #ff494999 !important;
+}
+
+.text-danger {
+    color: rgb(255, 54, 74) !important;
+    font-size: 19px;
+}
+
+@media screen and (max-width:567px) {
+    .w-90 {
+        width: 90% !important;
+    }
 }
 
 .body-bg,
 .form-control:focus {
-    background-color: #24353F;
+    background-color: transparent;
 }
 
 .form-control:focus {
-    box-shadow: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.18rem #6a8b9b;
+
 }
 
 .form-control::placeholder {
@@ -18,39 +62,31 @@ body {
 .login,
 .signup,
 .home {
-    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
-    /* margin-top: 100px; */
+    border: rgba(255, 255, 255, 0.651) 1px solid;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
 }
 
 h1 {
     font-weight: 500;
 }
 
-.singup {
+.singup,
+.login,
+.home {
     font-size: 18px;
 }
 
-.singup-link {
+.singup-link,
+.login-link {
     text-decoration: none;
 }
 
-.singup-link:hover {
+.singup-link:hover,
+.login-link:hover {
     text-decoration: underline;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.form-control-right {
-    box-shadow: 0 0 0 0.20rem #366928 !important;
-}
-
-.form-control-wrong {
-    box-shadow: 0 0 0 0.20rem #ff494999 !important;
 }
